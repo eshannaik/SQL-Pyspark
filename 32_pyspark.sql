@@ -1,0 +1,12 @@
+-- window_spec = Window.partitionBy('product_id')
+
+-- df.withcolumn('c',sum('quantity').over(window_spec))\
+-- 	.withcolumn('Classification',
+-- 		when(col('c') >= 30),'Outstanding')\
+-- 		.when(col('c').between(20,29),'Satisfactory')\
+-- 		.when(col('c').between(10,19),'Unsatisfactory')\
+-- 		.when(col('c').between(1,9),'Poor')\
+--         .otherwise('No Data')\
+-- 	)\
+--     .select('poduct_id','c','Classification')\
+--     .display()
